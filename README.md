@@ -16,7 +16,10 @@ npm i hummus-recipe --save
 
 ```javascript
 const linkToPdf = require('linktopdf');
-linkToPdf(text,srcPath,destPath,{
+
+
+
+linkToPdf(text,srcPath,destPath,{       //example linkToPdf('click here', './existing.pdf' , './output.pdf')
   fontSize : 13,  // Font size of the text
   textX : 10,     // X of text
   textY : 20,     // Y of text
