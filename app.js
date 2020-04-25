@@ -37,7 +37,7 @@ for(let i = 0 ; i<pages;i++){
   }
   var pageModifier = new hummus.PDFPageModifier(pdfWriter,i);
   pageModifier.attachURLLinktoCurrentPage(
-  '#begin',
+  options.link || '#begin',
   options.linkAreaLeft || defaultOptions.linkAreaLeft, 
   options.linkAreaBottoom || defaultOptions.linkAreaBottoom,
   options.linkAreaRight || defaultOptions.linkAreaRight,
@@ -62,4 +62,5 @@ for(let i = 0 ; i<pages;i++){
   pModifier.endContext().writePage();
 }
 pdfWriter1.end();
+return 'Success'
 }
